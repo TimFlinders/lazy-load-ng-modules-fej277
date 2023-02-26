@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  flex-flow: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  padding: 0.5em;
+}
+
+.contents {
+  display: flex;
+  flex-flow: row;
+  background-color: rgb(230, 222, 213);
+  height: 300px;
+}
+
+.anchor:not(:empty) {
+  padding: 0.5em;
+  border: dashed 1px rgb(83, 83, 83);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  background:rgb(12, 88, 158);
+  color: rgb(237, 243, 248);
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+li + li {
+  border-top: solid 1px rgb(224, 222, 222);
+}
